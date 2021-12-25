@@ -1,16 +1,7 @@
-import { useEffect } from 'react';
 import './menuSider.css';
 import { Link } from 'react-router-dom';
 const MenuSider = ({ menu }) => {
-    useEffect(() => {
-        window.onscroll = function() {
-            var y = window.scrollY;
-            console.log(y);
-            if(y > 593) {
-                alert("Cam color");
-            }
-        }
-    }, []);
+    
     return (
         <div className={`menuSider-container ${menu && "openMenu"}`}>
             <p>Menú Sider</p>

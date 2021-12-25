@@ -39,3 +39,8 @@
 .menuSider-links .link:hover {
     background: rgba(119, 119, 119, 0.288);
 }
+@media(min-width:640px) {
+    .menuSider-container {
+       display: none;
+    }
+}

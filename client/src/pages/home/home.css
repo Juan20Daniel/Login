@@ -12,3 +12,71 @@ header {
     background-position-y: top;
     background-position-x: center;
 }
+.header-content {
+    position: relative;
+    height: 100%;
+    padding: 14rem 3% 0;
+    color: white;
+}
+.header__title {
+    font-size: 2rem;
+}
+.header__text {
+    max-width: 380px;
+    padding: 2rem 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2rem;
+    color: #D3D3D3;
+    cursor: pointer;
+}
+.header__buton {
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+.header__xps {
+    position: absolute;
+    bottom: 4rem;
+    display: flex;
+}
+.xps--circle {
+    width: 100px;
+    height: 100px;
+    color: black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.xps--circle p {
+    display: inline;
+    font-size: 3rem;
+}
+@media(min-width: 400px) {
+    .header__title {
+        font-size: 2.5rem;
+    }
+}
+@media(min-width: 920px) {
+    .header-content {
+        padding: 16rem 3% 0;
+        color: white;
+    }
+    .header__title {
+        font-size: 3rem;
+    }
+}
+@media(min-width: 1135px) {
+    .header-content {
+        padding: 19rem 3% 0;
+        color: white;
+    }
+    .header__title {
+        font-size: 4rem;
+    }
+}
