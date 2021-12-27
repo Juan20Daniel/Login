@@ -1,10 +1,10 @@
-header, 
-main,
-footer {
-    width: 100%;
-    min-width: 320px;
+body::-webkit-scrollbar {
+    width: 5px;
+} 
+body::-webkit-scrollbar-thumb {
+    background: black;
 }
-header {
+.header-home {
     position: relative;
     height: 100vh;
     background-image: url("./assets/xps-ocAuPlfZXEc-unsplash.jpg");
@@ -20,6 +20,7 @@ header {
 }
 .header__title {
     font-size: 2rem;
+    user-select: none;
 }
 .header__text {
     max-width: 380px;
@@ -28,7 +29,7 @@ header {
     font-weight: 100;
     line-height: 2rem;
     color: #D3D3D3;
-    cursor: pointer;
+    user-select: none;
 }
 .header__buton {
     margin-top: 2rem;
@@ -37,15 +38,21 @@ header {
     background-color: white;
     border-radius: 0.5rem;
     border: none;
+    cursor: pointer;
 }
 .header__xps {
     position: absolute;
-    bottom: 4rem;
+    width: 270px;
+    bottom: 6rem;
     display: flex;
+    background: rgba(0, 0, 0, 0.685);
+    border-radius: 0.9rem;
+    padding: 1rem;
+    border: 0.1rem solid rgba(109, 109, 109, 0.39);
 }
 .xps--circle {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     color: black;
     border-radius: 50%;
     background-color: white;
@@ -53,13 +60,58 @@ header {
     align-items: center;
     justify-content: center;
 }
+.xps--circle p,
+.xps--info-name,
+.xps--info-description {
+    user-select: none;
+}
 .xps--circle p {
     display: inline;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+.xps--info {
+    position: relative;
+    width: calc(100% - 70px);
+    height: 70px;
+    padding: 1rem;
+}
+.xps--info-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.xps--info-description {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1rem;
+    color: rgb(180, 180, 180);
 }
 @media(min-width: 400px) {
     .header__title {
         font-size: 2.5rem;
+    }
+}
+@media(min-width: 500px) {
+    .header__xps {
+        width: 340px;
+        padding: 1.3rem;
+    }
+    .xps--circle {
+        width: 80px;
+        height: 80px;
+    }
+    .xps--circle p {
+        font-size: 2.5rem;
+    }
+    .xps--info {
+        width: calc(100% - 80px);
+        height: 80px;
+    }
+    .xps--info-name {
+        font-size: 1.8rem;
+    }
+    .xps--info-description {
+        font-size: 1.3rem;
+        color: rgb(180, 180, 180);
     }
 }
 @media(min-width: 920px) {
@@ -69,6 +121,30 @@ header {
     }
     .header__title {
         font-size: 3rem;
+    }
+
+    .header__xps {
+        width: 400px;
+        padding: 1.5rem;
+    }
+    .xps--circle {
+        width: 90px;
+        height: 90px;
+    }
+    .xps--circle p {
+        font-size: 2.5rem;
+    }
+    .xps--info {
+        width: calc(100% - 90px);
+        height: 90px;
+        padding: 1rem 1rem 1rem 2rem;
+    }
+    .xps--info-name {
+        font-size: 2rem;
+    }
+    .xps--info-description {
+        font-size: 1.5rem;
+        color: rgb(180, 180, 180);
     }
 }
 @media(min-width: 1135px) {

@@ -4,13 +4,13 @@ const MenuSider = ({ menu }) => {
     
     return (
         <div className={`menuSider-container ${menu && "openMenu"}`}>
-            <p>Menú Sider</p>
+            <p>Opciones</p>
             <div className="menuSider-links">
                 <Link className='link' to="/">Inicio</Link>
                 <Link className='link' to="/">Nosotros</Link>
                 <Link className='link' to="/">Contactos</Link>
-                <Link className='link' to="/access">Login</Link>
-                <Link className='link' to="/access/sigin">Sigin</Link>
+                <Link className='link' to="/">Login</Link>
+                <Link className='link' to="/">Sigin</Link>
             </div>
         </div>
     );

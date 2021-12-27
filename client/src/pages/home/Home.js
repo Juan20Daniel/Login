@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import './home.css';
 import MenuSider from "../../components/menuSider/MenuSider";
-
+import Modals from "../../components/modals/Modals";
 const Home = () => {
     const [ menu, setMenu ] = useState(false);
 
     return (
         <>
-            <header>
+            <header className="header-home">
+                <Modals />
                 <Navbar menu={menu} setMenu={setMenu}/>
                 <MenuSider menu={menu}/>
                 <div className="header-content">
@@ -23,8 +24,8 @@ const Home = () => {
                             <p>XPS</p>
                         </div>
                         <div className="xps--info">
-                            <p>XPS</p>
-                            <p>Designed to be the best</p>
+                            <p className="xps--info-name">XPS</p>
+                            <p className="xps--info-description">Designed to be the best</p>
                         </div>
                     </div>
                 </div>

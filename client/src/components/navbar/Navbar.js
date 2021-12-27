@@ -21,8 +21,12 @@ const Navbar = ({ menu, setMenu }) => {
                         <li><Link className='nav-link' to="/">Inicio</Link></li>
                         <li><Link className='nav-link' to="/">Nosotros</Link></li>
                         <li><Link className='nav-link' to="/">Contactos</Link></li>
-                        <li><Link className='nav-link' to="/access">Login</Link></li>
-                        <li><Link className='nav-link' to="/access/sigin">Sigin</Link></li>
+                        <li className='link--btn-login'>
+                            <button className='nav-link'>Login</button>
+                        </li>
+                        <li>
+                            <button className='nav-link'>Sigin</button>
+                        </li>
                     </ul>
                 </div>
             </div>

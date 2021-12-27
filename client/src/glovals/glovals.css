@@ -9,3 +9,9 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
 }
+header, 
+main,
+footer {
+    width: 100%;
+    min-width: 320px;
+}
