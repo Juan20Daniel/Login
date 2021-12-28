@@ -1,0 +1,44 @@
+.inputGroup {
+    width: 100%;
+    height: 60px;
+    margin: 2rem 0 3rem;
+    display: grid;
+    grid-template-rows: 40px 20px;
+}
+.input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.inputGroup .input input[type="text"],
+.inputGroup .input input[type="email"],
+.inputGroup .input input[type="password"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 0.3rem solid rgb(78, 153, 252);
+    outline: none;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: rgb(77, 77, 77);
+}
+.inputGroup .input label {
+    position: absolute;
+    top: -20px;
+    font-size: 2rem;
+    color: rgb(58, 143, 255);
+    display: block;
+    transform: translateY(27px);
+    transition: all 0.3s ease;
+}
+.inputGroup .input input:focus + label,
+.inputGroup .input input:not(:placeholder-shown) + label {
+    transform: translateY(0px);
+}
+.input input:-webkit-autofill,
+.input input:-webkit-autofill:hover,
+.input input:-webkit-autofill:active,
+.input input:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--blue);
+} 

@@ -6,6 +6,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header-home {
     position: relative;
+    min-height: 640px;
     height: 100vh;
     background-image: url("./assets/xps-ocAuPlfZXEc-unsplash.jpg");
     background-size: cover;
@@ -15,7 +16,7 @@ body::-webkit-scrollbar-thumb {
 .header-content {
     position: relative;
     height: 100%;
-    padding: 14rem 3% 0;
+    padding: 20rem 3% 0;
     color: white;
 }
 .header__title {

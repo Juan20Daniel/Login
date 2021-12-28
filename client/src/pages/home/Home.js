@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import './home.css';
 import MenuSider from "../../components/menuSider/MenuSider";
-import Modals from "../../components/modals/Modals";
+import Sigin from "../../components/sigin/Sigin";
+import Login from "../../components/login/Login";
 const Home = () => {
     const [ menu, setMenu ] = useState(false);
-
+    const [ sigin, setSigin ] = useState(false);
+    const [ login, setLogin ] = useState(false);
     return (
         <>
             <header className="header-home">
-                <Modals />
-                <Navbar menu={menu} setMenu={setMenu}/>
-                <MenuSider menu={menu}/>
+                <Sigin sigin={sigin} setSigin={setSigin} />
+                <Login login={login} setLogin={setLogin} />
+                <Navbar menu={menu} setMenu={setMenu} setSigin={setSigin} setLogin={setLogin}/>
+                <MenuSider menu={menu} setSigin={setSigin} setLogin={setLogin} setMenu={setMenu} />
                 <div className="header-content">
                     <h1 className="header__title">Pagina web, test login, sigin.</h1>
                     <p className="header__text">Creaccion de login y sigin en react,

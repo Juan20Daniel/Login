@@ -1,9 +1,15 @@
 import React from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
-const Navbar = ({ menu, setMenu }) => {
+const Navbar = ({ menu, setMenu, setSigin, setLogin }) => {
     const openMenu = () => {
         setMenu(!menu);
+    }
+    const callSetSigin = () => {
+        setSigin(true);
+    }
+    const callSetLogin = () => {
+        setLogin(true);
     }
     return (
         <nav>
@@ -22,10 +28,10 @@ const Navbar = ({ menu, setMenu }) => {
                         <li><Link className='nav-link' to="/">Nosotros</Link></li>
                         <li><Link className='nav-link' to="/">Contactos</Link></li>
                         <li className='link--btn-login'>
-                            <button className='nav-link'>Login</button>
+                            <button type="button" onClick={callSetLogin} className='nav-link'>Login</button>
                         </li>
-                        <li>
-                            <button className='nav-link'>Sigin</button>
+                        <li  className='link--btn-login'>
+                            <button type="button" onClick={callSetSigin} className='nav-link'>Sigin</button>
                         </li>
                     </ul>
                 </div>

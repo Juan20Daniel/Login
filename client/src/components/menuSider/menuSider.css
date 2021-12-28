@@ -40,6 +40,10 @@
 .menuSider-links .link:hover {
     background: rgba(119, 119, 119, 0.288);
 }
+.menuSider-container .menuSider-links button {
+    background: none;
+    border: none;
+}
 @media(min-width:640px) {
     .menuSider-container {
        display: none;

@@ -45,4 +45,8 @@ nav {
         color: white;
         font-size: 1.4rem;
     }
+    .link--btn-login button {
+        background: none;
+        border: none;
+    }
 }

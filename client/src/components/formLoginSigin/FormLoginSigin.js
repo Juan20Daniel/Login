@@ -1,11 +1,27 @@
-import React from 'react';
-
-const FormLosinSigin = () => {
+import React from "react";
+import './formLoginSigin.css';
+import bxs_user_circle from './assets/bxs-user-circle.svg';
+import closeModal from './assets/closeModal.svg';
+const Sigin = ({ sigin, setSigin, title, children }) => {
+    const callSetSigin = () => {
+        setSigin(false);
+    }
     return (
-        <div>
-            <h1>Form</h1>
+        <div className={`login ${sigin && "is-open"}`}>
+            <form className="login__form">
+               <div className="form-box">
+                    <div className="login__form--logo">
+                        <img src={bxs_user_circle} alt="Icon of user" />
+                    </div>
+                    <button type="button" onClick={callSetSigin} className="form__btn-close">
+                        <img src={closeModal} alt="Icon modal close"/>
+                    </button>
+                    <p className="login__form--title">{title}</p>
+                    { children }
+               </div>
+            </form>
         </div>
     );
 }
 
-export default FormLosinSigin;
+export default Sigin;
