@@ -1,9 +1,13 @@
 import './menuSider.css';
 import { Link } from 'react-router-dom';
-const MenuSider = ({ menu, setMenu, setSigin }) => {
-    const callSetMenu = () => {
+const MenuSider = ({ menu, setMenu, setLogin, setSigin }) => {
+    const openSigin = () => {
         setMenu(false);
         setSigin(true);
+    }
+    const openLogin = () => {
+        setMenu(false);
+        setLogin(true);
     }
     return (
         <div className={`menuSider-container ${menu && "openMenu"}`}>
@@ -12,8 +16,8 @@ const MenuSider = ({ menu, setMenu, setSigin }) => {
                 <Link className='link' to="/">Inicio</Link>
                 <Link className='link' to="/">Nosotros</Link>
                 <Link className='link' to="/">Contactos</Link>
-                <button className='link'>Login</button>
-                <button className='link' onClick={callSetMenu}>Sigin</button>
+                <button className='link' onClick={openLogin}>Login</button>
+                <button className='link' onClick={openSigin}>Sigin</button>
             </div>
         </div>
     );

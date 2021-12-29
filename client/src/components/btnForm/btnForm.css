@@ -1,0 +1,18 @@
+.btnForm {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2rem;
+    background: rgb(55, 125, 182);
+    border: none;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+.active {
+    background: white;
+    color: rgb(55, 125, 182);
+    border: 5px solid rgb(55, 125, 182);
+}

@@ -7,8 +7,10 @@ const Navbar = ({ menu, setMenu, setSigin, setLogin }) => {
     }
     const callSetSigin = () => {
         setSigin(true);
+        setLogin(false);
     }
     const callSetLogin = () => {
+        setSigin(false);
         setLogin(true);
     }
     return (

@@ -20,7 +20,7 @@
     margin-top: 15rem;
     background: white;
     border-radius: 1.4rem 1.4rem 0 0;
-    padding: 0 2rem;
+    padding: 0 2rem 2rem;
 }
 .form-box {
     max-width: 400px;
@@ -71,6 +71,7 @@
     .login {
         position: absolute;
         width: 400px;
+        height: calc(100% - 50px);
         right: 20px;
         top: -900px;
         z-index: 3;
@@ -89,7 +90,7 @@
         margin-top: 0;
         background: white;
         border-radius: 1.4rem;
-        padding: 0 5rem;
+        padding: 0 5rem 2rem;
         box-shadow: 0 0 3px black;
     }
 }

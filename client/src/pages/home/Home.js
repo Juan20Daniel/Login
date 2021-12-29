@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <>
             <header className="header-home">
-                <Sigin sigin={sigin} setSigin={setSigin} />
-                <Login login={login} setLogin={setLogin} />
+                <Sigin sigin={sigin} setSigin={setSigin} setLogin={setLogin}/>
+                <Login login={login} setLogin={setLogin} setSigin={setSigin}/>
                 <Navbar menu={menu} setMenu={setMenu} setSigin={setSigin} setLogin={setLogin}/>
                 <MenuSider menu={menu} setSigin={setSigin} setLogin={setLogin} setMenu={setMenu} />
                 <div className="header-content">

@@ -46,10 +46,9 @@ body::-webkit-scrollbar-thumb {
     width: 270px;
     bottom: 6rem;
     display: flex;
-    background: rgba(0, 0, 0, 0.685);
+    background: rgba(0, 0, 0, 0.438);
     border-radius: 0.9rem;
     padding: 1rem;
-    border: 0.1rem solid rgba(109, 109, 109, 0.39);
 }
 .xps--circle {
     width: 70px;
