@@ -4,10 +4,21 @@ import './home.css';
 import MenuSider from "../../components/menuSider/MenuSider";
 import Sigin from "../../components/sigin/Sigin";
 import Login from "../../components/login/Login";
+import Admin from '../admin/Admin';
+import { Route, Redirect } from "react-router-dom";
 const Home = () => {
     const [ menu, setMenu ] = useState(false);
     const [ sigin, setSigin ] = useState(false);
     const [ login, setLogin ] = useState(false);
+    const user = false;
+    if(user) {
+        return (
+            <>
+                <Route path="/admin" component={Admin} />
+                <Redirect to="/admin" />
+            </>
+        )
+    }
     return (
         <>
             <header className="header-home">
